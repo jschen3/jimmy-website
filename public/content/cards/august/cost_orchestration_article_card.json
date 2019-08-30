@@ -1,0 +1,9 @@
+{
+    "title":"Cost Orchestration at Walmart",
+    "type":"Medium Article",
+    "image":"process.env.PUBLIC_URL + '/cards/august/images/cost_orchestration.png'",
+    "description":"A critical component at Walmart or any ecommerce store is data. One particular aspect of that data is the data related to the items that…",
+    "linkText":"Read more",
+    "linkUrl":"https://medium.com/walmartlabs/cost-orchestration-at-walmart-f34918af67c4"
+
+}

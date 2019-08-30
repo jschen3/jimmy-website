@@ -1,0 +1,8 @@
+{
+    "title":"Education Systems Around the World",
+    "type":"Medium Article",
+    "image":"process.env.PUBLIC_URL + '/cards/august/images/education.png",
+    "description":"One topic, that has always fascinated me is education; teaching, what is the best way to shape the next generation for success. Are there…",
+    "linkText":"Read more",
+    "linkUrl":"https://medium.com/@chen.s.jimmy/education-systems-around-the-world-dea13b3faab"
+}
