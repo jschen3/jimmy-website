@@ -1,22 +1,33 @@
 import React from 'react';
-import {Card} from 'src/components/card/card.js'
+import 'vertical_card_container.css'
 export class Card extends React.Component {
-    constructor(props){
-        
+    constructor(props) {
+
         /*
         fetch rows of cards.
-        in a function from the folder in public
+        in a
         */
 
     }
-    renderCard(cardData){
-        return (<card/>);
-    }    
-    render(){
+    renderCard(cardData) {
+        return (
+        <Card style={{ width: '18rem' }}>
+            <Card.Img variant="top" src="{cardData.Image}" />
+            <Card.Body>
+                <Card.Title>{cardData.title}</Card.Title>
+                <Card.Text>
+                    {cardData.description}
+                </Card.Text>
+                <Button variant="primary" href="{cardData.linkUrl}">{cardData.linkText}</Button>
+            </Card.Body>
+        </Card>
+        );
+    }
+    render() {
         /*
-        Create a 3 by 3 row of cards.
+        Create a 4 by 3 row of cards.
         map of all the cards. 
         */
-       return ();
+        return ();
     }
 }
