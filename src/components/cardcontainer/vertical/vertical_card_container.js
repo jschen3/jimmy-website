@@ -1,24 +1,21 @@
 import React from 'react';
-import 'vertical_card_container.css'
-import listReactFiles from 'list-react-files'
-export class Card extends React.Component {
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
+export class VerticalCardContainer extends React.Component {
     constructor(props) {
         super(props);
-        months = ["january", "february","march","april","may","june","july","august","september","octover","november","december"];
-        today = new Date();
-        todayMonth = today.getMonth();
-        firstMonth = months[todayMonth-2];
-        secondMonth = months[secondMonth-1];
-        todayMonth = months[todayMonth];
-        firstMonthFolder = "content/cards/"+firstMonth;
-        secondMonthFolder = "content/cards/"+secondMonth;
-        monthFolder = "content/cards"+todayMonth;
-
-        firstMonthFiles = listReactFiles(firstMonthFolder).then(files=>{
-            //get all files and file contents and make cards.
-        })
-
-
+        const months = ["january", "february","march","april","may","june","july","august","september","october","november","december"];
+        const today = new Date();
+        const todayMonth = months[today.getMonth()];
+        const todayYear = today.getFullYear();
+        const todayMonthCardPath = 'content/cards/'+todayYear+'/'+todayMonth+'/'+todayMonth+'.json';
+        console.log(todayMonthCardPath);
+        this.state = {
+            currentMonthCards:null,
+            lastMonthCards:null,
+            previousLastMonthCards:null
+        }
+        fetch(todayMonthCardPath).then(response =>response.json()).then((currentMonthCards)=>this.setState({currentMonthCards: currentMonthCards}));
         /*
         fetch rows of cards.
         in a
