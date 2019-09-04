@@ -52,22 +52,13 @@ export class VerticalCardContainer extends React.Component {
         window.location.href=linkUrl;
     }
     render() {
-    //     /*
-    //     Create a 4 by 3 row of cards.
-    //     map of all the cards. 
-    //     */
-        var cards = this.state.currentMonthCards;
-        console.log(cards);
-        var cardList=cards.map(
-            (cardData)=>{
-            this.renderCard(cardData)
-        });
-        return (
-            <div>
-                <div className="card-row">
-                    {cardList}
-                </div>
-            </div>
-       );
-    }
+    
+        // Create a 4 by 3 row of cards.
+        // map of all the cards. 
+        
+    return (
+        this.state.currentMonthCards.map( (cardData)=>{
+            renderCard(cardData)   
+    });
+        
 }
