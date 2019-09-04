@@ -4,24 +4,36 @@ import Button from 'react-bootstrap/Button'
 export class VerticalCardContainer extends React.Component {
     constructor(props) {
         super(props);
-        const months = ["january", "february","march","april","may","june","july","august","september","october","november","december"];
-        const today = new Date();
-        const todayMonth = months[today.getMonth()];
-        const todayYear = today.getFullYear();
-        const todayMonthCardPath = 'content/cards/'+todayYear+'/'+todayMonth+'/'+todayMonth+'.json';
-        console.log(todayMonthCardPath);
         this.state = {
             currentMonthCards:null,
             lastMonthCards:null,
             previousLastMonthCards:null
         }
-        fetch(todayMonthCardPath).then(response =>response.json()).then((currentMonthCards)=>this.setState({currentMonthCards: currentMonthCards}));
+    }
+    componentWillMount(){    
+        const months = ["january", "february","march","april","may","june","july","august","september","october","november","december"];
+        const today = new Date();
+        const todayMonth = months[today.getMonth()];
+        const todayYear = today.getFullYear();
+        const todayMonthCardPath = 'content/cards/'+todayYear+'/'+todayMonth+'/'+todayMonth+'.json';
+       
+        fetch(todayMonthCardPath).then(response =>{ //move to a different time before render step
+            
+            return response.json()
+        }).then(
+        (currentMonthCards)=>{
+            
+            this.setState({currentMonthCards});
+            
+        });
+    }
+        
         /*
         fetch rows of cards.
         in a
         */
 
-    }
+    
     renderCard(cardData) {
         return (
         <Card style={{ width: '18rem' }}>
@@ -40,16 +52,22 @@ export class VerticalCardContainer extends React.Component {
         window.location.href=linkUrl;
     }
     render() {
-        /*
-        Create a 4 by 3 row of cards.
-        map of all the cards. 
-        */
+    //     /*
+    //     Create a 4 by 3 row of cards.
+    //     map of all the cards. 
+    //     */
+        var cards = this.state.currentMonthCards;
+        console.log(cards);
+        var cardList=cards.map(
+            (cardData)=>{
+            this.renderCard(cardData)
+        });
         return (
             <div>
                 <div className="card-row">
-                    
+                    {cardList}
                 </div>
             </div>
-        );
+       );
     }
 }
