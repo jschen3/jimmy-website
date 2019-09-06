@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import {VerticalCardContainer} from './components/cardcontainer/vertical/vertical_card_container'
+import {VerticalCardContainer} from './components/cardcontainer/vertical/verticalcardcontainer'
 
 ReactDOM.render(<VerticalCardContainer/>
     , document.getElementById('root'));
