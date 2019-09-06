@@ -36,19 +36,19 @@ export class VerticalCardContainer extends React.Component {
     render() { 
          if (this.state.currentMonthCards!=null){
             let cardsArray = this.state.currentMonthCards.map((cardData) =>
-            <Card style={{ width: '20rem' , float:'left'}}>
-                    <Card.Img variant="top" src={cardData.image} />
-                    <Card.Body>
-                        <Card.Title>{cardData.title}</Card.Title>
+            <Card style={{ width: '20rem' , float:'left'}} className="h-100">
+                    <Card.Img className="h-50" variant="top" src={cardData.image} />
+                    <Card.Body className="h-10">
+                        <Card.Title className="h-10">{cardData.title}</Card.Title>
                         <Card.Text>
                             {cardData.description}
                         </Card.Text>
-                        <Button variant="primary" onClick={() => this.handleClick(cardData.linkUrl)}>{cardData.linkText}</Button>
-                    </Card.Body>
+                        <Button className="h-10" variant="primary" onClick={() => this.handleClick(cardData.linkUrl)}>{cardData.linkText}</Button>
+                        </Card.Body>
                 </Card>);
             return (
                 <div>
-                    <div class="row">
+                    <div class="row ">
                         <div class=" d-flex align-items-stretch">
                             {cardsArray ? cardsArray :null}
                         </div>
