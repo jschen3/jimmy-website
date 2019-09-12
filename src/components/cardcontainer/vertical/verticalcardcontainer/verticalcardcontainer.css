@@ -1,0 +1,10 @@
+.card-title{
+    text-overflow: ellipsis;
+}
+.card-body{
+    padding-bottom: 4rem;
+}
+.vertical-card-button{
+    display: flex;
+    justify-content: center;
+}
