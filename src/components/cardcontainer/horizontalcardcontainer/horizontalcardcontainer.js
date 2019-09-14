@@ -9,7 +9,14 @@ export class HorizontalCardContainer extends React.Component {
         }
     }
     getData(){
-
+        const horizontalCardsJson = 'content/horizontal_cards/homepage_horizontal_cards/homepage_horizontal_cards.json'
+        fetch(horizontalCardsJson).then(response => { //move to a different time before render step
+            return response.json()
+        }).then(
+            (cards) => {
+                this.setState({ cards });
+                console.log(this.state.cards);
+            });
     }
     render(){
         if (this.state.cards!=null){
@@ -30,5 +37,8 @@ export class HorizontalCardContainer extends React.Component {
             )
         }
         return null;
+    }
+    componentDidMount() {
+        this.getData();
     }
 }

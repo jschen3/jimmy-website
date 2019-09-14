@@ -6,9 +6,9 @@ import {AboutMeContainer} from './components/cardcontainer/vertical/aboutmeconta
 import { HorizontalContainer } from './components/cardcontainer/horizontal/horizontalcontainer';
 import { RadarDiagram }  from './components/diagram/radardiagram';
 import  {HorizontalCardContainer} from './components/cardcontainer/horizontalcardcontainer/horizontalcardcontainer';
-ReactDOM.render(<VerticalCardContainer/>
-   , document.getElementById('verticalCardContainer'));
-ReactDOM.render(<AboutMeContainer/>, document.getElementById('aboutMeImages')); 
-ReactDOM.render(<HorizontalContainer/>, document.getElementById('horizontalContainer'));
-ReactDOM.render(<RadarDiagram/>, document.getElementById('radarDiagram'));
+// ReactDOM.render(<VerticalCardContainer/>
+//    , document.getElementById('verticalCardContainer'));
+// ReactDOM.render(<AboutMeContainer/>, document.getElementById('aboutMeImages')); 
+// ReactDOM.render(<HorizontalContainer/>, document.getElementById('horizontalContainer'));
+// ReactDOM.render(<RadarDiagram/>, document.getElementById('radarDiagram'));
 ReactDOM.render(<HorizontalCardContainer/>, document.getElementById('horizontalCardContainer'));
