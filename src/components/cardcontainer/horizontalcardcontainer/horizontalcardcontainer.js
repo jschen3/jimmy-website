@@ -21,11 +21,11 @@ export class HorizontalCardContainer extends React.Component {
     render(){
         if (this.state.cards!=null){
             let cardsArray = this.state.cards.map((cardData) => 
-            <Card className="h-100">
-                    <Card.Img className="h-50" variant="top" src={cardData.image} />
-                    <Card.Body className="h-10">
-                        <Card.Title className="h-10 card-title">{cardData.title}</Card.Title>
-                        <Card.Text>
+            <Card>
+                    <Card.Img className="col-md-3 card-image" variant="left" src={cardData.image} />
+                    <Card.Body className="col-md-9 card-body">
+                        <Card.Title className="card-title"><h2>{cardData.title}</h2></Card.Title>
+                        <Card.Text className="card-text">
                             {cardData.description}
                         </Card.Text>
                     </Card.Body>
