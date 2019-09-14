@@ -11,8 +11,8 @@ export class VerticalCardContainer extends React.Component {
             previousLastMonthCards: null
         }
     }
-    
-    getData(){
+
+    getData() {
         const months = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
         const today = new Date();
         const todayMonth = months[today.getMonth()];
@@ -33,30 +33,30 @@ export class VerticalCardContainer extends React.Component {
     handleClick(linkUrl) {
         window.location.href = linkUrl;
     }
-    render() { 
-         if (this.state.currentMonthCards!=null){
+    render() {
+        if (this.state.currentMonthCards != null) {
             let cardsArray = this.state.currentMonthCards.map((cardData) =>
-            <Card style={{ width: '20rem' , float:'left'}} className="h-100">
+                <Card style={{ width: '20rem', float: 'left' }} className="h-100">
                     <Card.Img className="h-50" variant="top" src={cardData.image} />
-                    <Card.Body className="h-10" >
+                    <Card.Body className="h-10">
                         <Card.Title className="h-10 card-title">{cardData.title}</Card.Title>
                         <Card.Text>
                             {cardData.description}
                         </Card.Text>
                         <Button className="h-10 vertical-card-buttons" variant="primary" onClick={() => this.handleClick(cardData.linkUrl)}>{cardData.linkText}</Button>
-                        </Card.Body>
+                    </Card.Body>
                 </Card>);
             return (
                 <div>
                     <div className="row">
                         <div className="d-flex align-items-stretch">
-                            {cardsArray ? cardsArray :null}
+                            {cardsArray ? cardsArray : null}
                         </div>
-                    </div> 
+                    </div>
                 </div>
             );
         }
-        return null;    
+        return null;
     }
     componentDidMount() {
         this.getData();
