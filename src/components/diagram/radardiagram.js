@@ -1,5 +1,6 @@
 import React from 'react';
 import RadarChart from 'react-svg-radar-chart';
+import './radardiagram.css';
 export class RadarDiagram extends React.Component{
     constructor(props){
         super(props);
@@ -17,7 +18,8 @@ export class RadarDiagram extends React.Component{
                 speed: 0.67,
                 weight: 0.8
               },
-              meta: { color: 'blue' }
+              meta: { color: '#1ecbe1' },
+              scales:3
         }]
         const captions = {
             // columns
@@ -31,6 +33,10 @@ export class RadarDiagram extends React.Component{
             captions={captions}
             data={data}
             size={450}
+            scales={3}
+            axes={true}
+            scaleProps={{ className: 'scale', fill: 'black', stroke:"#999",
+            strokeWidth:"0.2" }}
             />);
     }        
     

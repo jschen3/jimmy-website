@@ -1,20 +1,22 @@
-[{
-    "type":"text",
-    "text":"I am a software engineer extraordinaire. I code back end architecture systems at walmart labs. One of my most recent projects was Cost Orchestration. In my spare time I also learn front end systems like this website which is coded in react. I like the instant gratification found in software. What you type can be instantly reflected on the screen without any more components. ",
-    "image":null
-},
-{
-  "type":"text",
-  "text":"Also I am long distance runner. I like to run and hike in my spare time. Last year I ran the San Francisco Marathon. I don't know if I'm gonna run another marathon anytime soon, but I like the mental test between physical and mental desires to keep going.",
-  "image":null 
-},
-{
-    "type":"text",
-    "text":"My next goal is to go to all of the national parks in the United States. So far I have been to Yosemite, Zion National Park, Rocky Mountain National Park, and Yellowstone. I have a lot more to go to.",
-    "image":null
-},
-{
-    "type":"text",
-    "text":"I live life for the adventure, but keep myself grounded at work. I like the work hard play hard mentality. Just ask for help and improve yourself. Keep working.",
-    "image":null
-}]
+[
+    {
+        "type": "text",
+        "text": "I am a software engineer extraordinaire. I code back end architecture systems at walmart labs. One of my most recent projects was Cost Orchestration. In my spare time I also learn front end systems like this website which is coded in react. I like the instant gratification found in software. What you type can be instantly reflected on the screen without any more components. ",
+        "image": null
+    },
+    {
+        "type": "text",
+        "text": "Also I am long distance runner. I like to run and hike in my spare time. Last year I ran the San Francisco Marathon. I don't know if I'm gonna run another marathon anytime soon, but I like the mental test between physical and mental desires to keep going.",
+        "image": null
+    },
+    {
+        "type": "text",
+        "text": "My next goal is to go to all of the national parks in the United States. So far I have been to Yosemite, Zion National Park, Rocky Mountain National Park, and Yellowstone. I have a lot more to go to.",
+        "image": null
+    },
+    {
+        "type": "text",
+        "text": "I live life for the adventure, but keep myself grounded at work. I like the work hard play hard mentality. Just ask for help and improve yourself. Keep working.",
+        "image": null
+    }
+]
