@@ -36,11 +36,11 @@ export class VerticalCardContainer extends React.Component {
     render() {
         if (this.state.currentMonthCards != null) {
             let cardsArray = this.state.currentMonthCards.map((cardData) =>
-                <Card style={{ width: '20rem'}} className="col-md-4 col-lg-4 h-100">
+                <Card className="col-md-4 col-lg-4 card">
                     <Card.Img className="h-50" variant="top" src={cardData.image} />
                     <Card.Body className="h-10">
-                        <Card.Title className="h-10 card-title">{cardData.title}</Card.Title>
-                        <Card.Text>
+                        <Card.Title className="h-10 card-title col-md-4">{cardData.title}</Card.Title>
+                        <Card.Text className="col-md-4">
                             {cardData.description}
                         </Card.Text>
                         <Button className="h-10 vertical-card-buttons" variant="primary" onClick={() => this.handleClick(cardData.linkUrl)}>{cardData.linkText}</Button>

@@ -1,10 +1,15 @@
 .card-title{
     text-overflow: ellipsis;
+    float:left;
+    display:block;
 }
 .card-body{
+    display:inline;
     padding-bottom: 4rem;
 }
 .vertical-card-button{
-    display: flex;
     justify-content: center;
+}
+.card{
+    float:left
 }
