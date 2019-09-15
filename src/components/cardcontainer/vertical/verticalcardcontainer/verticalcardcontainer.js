@@ -36,7 +36,7 @@ export class VerticalCardContainer extends React.Component {
     render() {
         if (this.state.currentMonthCards != null) {
             let cardsArray = this.state.currentMonthCards.map((cardData) =>
-                <Card style={{ width: '20rem', float: 'left' }} className="h-100">
+                <Card style={{ width: '20rem'}} className="col-md-4 col-lg-4 h-100">
                     <Card.Img className="h-50" variant="top" src={cardData.image} />
                     <Card.Body className="h-10">
                         <Card.Title className="h-10 card-title">{cardData.title}</Card.Title>
@@ -48,7 +48,7 @@ export class VerticalCardContainer extends React.Component {
                 </Card>);
             return (
                 <div>
-                    <div className="row">
+                    <div className="row vertical-card-container">
                         <div className="d-flex align-items-stretch">
                             {cardsArray ? cardsArray : null}
                         </div>

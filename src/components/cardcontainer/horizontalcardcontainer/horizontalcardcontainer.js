@@ -29,7 +29,7 @@ export class HorizontalCardContainer extends React.Component {
                     </Card.Body>
             </Card>);
             return (
-                <div>
+                <div className="horizontal-card-container">
                     {cardsArray ? cardsArray:null}
                 </div>
             )
