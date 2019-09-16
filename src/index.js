@@ -7,7 +7,7 @@ import { HorizontalContainer } from './components/cardcontainer/horizontal/horiz
 import { RadarDiagram }  from './components/diagram/radardiagram';
 import  {HorizontalCardContainer} from './components/cardcontainer/horizontalcardcontainer/horizontalcardcontainer';
 import {CustomNavbar} from './components/customnavbar/customnavbar';
-import {MediumHorizontalCardContainer} from './components/cardcontainer/horizontalcardcontainer/mediumhorizontalcardcontainer'
+import {MediumHorizontalCardContainer} from './components/cardcontainer/horizontalmedium/mediumhorizontalcardcontainer'
 // ReactDOM.render(<AboutMeContainer/>, document.getElementById('aboutMeImages')); 
 // ReactDOM.render(<HorizontalContainer/>, document.getElementById('horizontalContainer'));
 // ReactDOM.render(<RadarDiagram/>, document.getElementById('radarDiagram'));

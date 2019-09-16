@@ -1,5 +1,5 @@
 import Card from 'react-bootstrap/Card'
-import './horizontalcardcontainer.css';
+import './mediumhorizontalcardcontainer.css';
 import React from 'react';
 import Button from 'react-bootstrap/Button'
 export class MediumHorizontalCardContainer extends React.Component {
@@ -27,8 +27,8 @@ export class MediumHorizontalCardContainer extends React.Component {
         if (this.state.currentMonthCards!=null){
             let cardsArray = this.state.currentMonthCards.map((cardData) => 
             <Card>
-                    <Card.Img className="col-md-3 col-lg-3 card-image" variant="left" src={cardData.image} />
-                    <Card.Body className="col-md-9 col-lg-9 card-body">
+                    <Card.Img className="col-md-4 col-lg-4 card-image" variant="left" src={cardData.image} />
+                    <Card.Body className="col-md-8 col-lg-8 card-body">
                         <Card.Title className="card-title"><h2>{cardData.title}</h2>{cardData.description}<Button className="vertical-card-buttons" variant="primary" onClick={() => this.handleClick(cardData.linkUrl)}>{cardData.linkText}</Button>
                         </Card.Title>
                     </Card.Body>
