@@ -8,7 +8,8 @@
     width:100%
 }
 .card{
-    flex-direction: row
+    flex-direction: row;
+
 }
 .card-title{
     display: block;
@@ -16,4 +17,5 @@
 .card-text{
     width:100%;
     display: block;
+
 }

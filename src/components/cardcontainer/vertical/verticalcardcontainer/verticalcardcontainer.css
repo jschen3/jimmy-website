@@ -1,15 +1,20 @@
-.card-title{
-    text-overflow: ellipsis;
-    float:left;
-    display:block;
-}
-.card-body{
-    display:inline;
-    padding-bottom: 4rem;
-}
-.vertical-card-button{
-    justify-content: center;
+.card-row{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .card{
-    float:left
+
+}
+.card-image{
+   position:relative;
+   width:300px;
+}
+.card-body{
+    position:relative;
+}
+.card-title{
+    position:relative;
+}
+.card-text{
+    position:relative;
 }
