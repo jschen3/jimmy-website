@@ -22,7 +22,7 @@ export class HorizontalCardContainer extends React.Component {
         if (this.state.cards!=null){
             let cardsArray = this.state.cards.map((cardData) => 
             <Card>
-                    <Card.Img className="col-md-4 col-lg-4 card-image" variant="left" src={cardData.image} />
+                    <Card.Img className="col-md-4 col-lg-4 card-image" variant="left" src={cardData.image} />   
                     <Card.Body className="col-md-8 col-lg-8 card-body">
                         <Card.Title className="card-title"><h2>{cardData.title}</h2>{cardData.description}
                         </Card.Title>

@@ -19,3 +19,7 @@
     display: block;
 
 }
+
+.card-image:hover .overlay {
+    opacity: 1;
+  }
