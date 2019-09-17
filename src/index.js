@@ -13,6 +13,6 @@ import {ResumePdf} from './components/pdfviewer/ResumePdf'
 // ReactDOM.render(<HorizontalContainer/>, document.getElementById('horizontalContainer'));
 // ReactDOM.render(<RadarDiagram/>, document.getElementById('radarDiagram'));
 ReactDOM.render(<CustomNavbar/>, document.getElementById('navbar'));
-ReactDOM.render(<HorizontalCardContainer/>, document.getElementById('horizontalCardContainer'));
+//ReactDOM.render(<HorizontalCardContainer/>, document.getElementById('horizontalCardContainer'));
 ReactDOM.render(<MediumHorizontalCardContainer/> , document.getElementById('mediumHorizontalCardContainer'));
 // ReactDOM.render(<ResumePdf/>, document.getElementById('resumePdf'));
