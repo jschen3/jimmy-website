@@ -11,6 +11,7 @@
     "d3-voronoi": "^1.1.4",
     "list-react-files": "^0.2.0",
     "lodash": "^4.17.15",
+    "pdfjs": "^2.3.1",
     "react": "^16.9.0",
     "react-bootstrap": "^1.0.0-beta.12",
     "react-d3-radar": "^1.0.0-rc6",

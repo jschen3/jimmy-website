@@ -39,4 +39,5 @@ export class HorizontalCardContainer extends React.Component {
     componentDidMount() {
         this.getData();
     }
+    
 }
