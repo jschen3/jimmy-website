@@ -17,4 +17,5 @@ ReactDOM.render(<CustomNavbar/>, document.getElementById('navbar'));
 //ReactDOM.render(<HorizontalCardContainer/>, document.getElementById('horizontalCardContainer'));
 ReactDOM.render(<MediumHorizontalCardContainer/> , document.getElementById('mediumHorizontalCardContainer'));
 //ReactDOM.render(<ResumePdf/>, document.getElementById('resumePdf'));
-export default App;
+export default App()
+
