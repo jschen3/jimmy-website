@@ -9,6 +9,8 @@ import  {HorizontalCardContainer} from './components/cardcontainer/horizontalcar
 import {CustomNavbar} from './components/customnavbar/customnavbar';
 import {MediumHorizontalCardContainer} from './components/cardcontainer/horizontalmedium/mediumhorizontalcardcontainer'
 import {ResumePdf} from './components/pdfviewer/ResumePdf'
+import {render} from 'react-dom'
+import {BrowserRouter} from 'react-router-dom'
 
 // ReactDOM.render(<AboutMeContainer/>, document.getElementById('aboutMeImages')); 
 // ReactDOM.render(<HorizontalContainer/>, document.getElementById('horizontalContainer'));
