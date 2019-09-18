@@ -1,5 +1,5 @@
 import React from 'react';
-import { Document, Page } from 'react-pdf/dist/entry.webpack'
+import { Document, Page } from 'react-pdf/dist/entry.webpack';
 
 
 import pdfFile from './Resume.pdf';
