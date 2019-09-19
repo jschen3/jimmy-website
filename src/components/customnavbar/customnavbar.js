@@ -8,9 +8,9 @@ export class CustomNavbar extends React.Component {
     }
     render(){
         return (<Navbar bg="dark" variant="dark">
-            <Navbar.Brand href="#home">Jimmy Chen</Navbar.Brand>
+            <Navbar.Brand href="/">Jimmy Chen</Navbar.Brand>
             <Nav className="mr-auto">
-                <Nav.Link href="/home" className="nav-link">Home</Nav.Link>
+                <Nav.Link href="/" className="nav-link">Home</Nav.Link>
                 <Nav.Link href="/aboutme" className="nav-link">About Me</Nav.Link>
             </Nav>
         </Navbar>);
