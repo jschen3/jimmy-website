@@ -23,6 +23,10 @@ render(
 //ReactDOM.render(<HorizontalCardContainer/>, document.getElementById('horizontalCardContainer'));
 //ReactDOM.render(<ResumePdf/>, document.getElementById('resumePdf'));
 ReactDOM.render(<CustomNavbar/>, document.getElementById('navbar'));
-ReactDOM.render(<MediumHorizontalCardContainer/> , document.getElementById('mediumHorizontalCardContainer'));
-//ReactDOM.render(<AboutMeContainer/>, document.getElementById('aboutMeImages')); 
-//ReactDOM.render(<HorizontalContainer/>, document.getElementById('horizontalContainer'));
+if (document.getElementById('mediumHorizontalCardContainer')){
+    ReactDOM.render(<MediumHorizontalCardContainer/> , document.getElementById('mediumHorizontalCardContainer'));
+}
+if (document.getElementById('aboutMeImages')){
+    ReactDOM.render(<AboutMeContainer/>, document.getElementById('aboutMeImages')); 
+    ReactDOM.render(<HorizontalContainer/>, document.getElementById('horizontalContainer'));
+}
