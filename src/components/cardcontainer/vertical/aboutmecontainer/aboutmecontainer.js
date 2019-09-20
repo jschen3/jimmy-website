@@ -22,7 +22,7 @@ export class AboutMeContainer extends React.Component {
     render() {
         if (this.state.images != null) {
             let imagesArray = this.state.images.map((image) =>
-                <Card style={{ width: '25rem', float: 'left' }} className="h-100">
+                <Card className="col-md-4 col-lg-4 h-100">
                     <Card.Img className="h-100" variant="top" src={image.imagePath} />
                     <Card.Body className="h-10">
                     </Card.Body>
