@@ -26,6 +26,7 @@ ReactDOM.render(<CustomNavbar/>, document.getElementById('navbar'));
 if (document.getElementById('mediumHorizontalCardContainer')){
     ReactDOM.render(<MediumHorizontalCardContainer/> , document.getElementById('mediumHorizontalCardContainer'));
 }
+
 if (document.getElementById('aboutMeImages')){
     ReactDOM.render(<AboutMeContainer/>, document.getElementById('aboutMeImages')); 
     ReactDOM.render(<HorizontalContainer/>, document.getElementById('horizontalContainer'));
