@@ -3,13 +3,14 @@ import React from 'react'
 import './carousel.css'
 
 export class CustomCarousel extends React.Component{
-    constructor(props) {
+    constructor(props){   
+    super(props) 
         this.state = {
             images:null
         }
     }
     getData(){
-           const imagesPath = 'content/carousel/'+this.props.name+"/"+this.props.name+".json"
+           const imagesPath = 'content/carousels/'+this.props.name+"/"+this.props.name+".json"
            console.log(imagesPath);
            fetch(imagesPath).then(response => { //move to a different time before render step
             return response.json()
@@ -22,11 +23,10 @@ export class CustomCarousel extends React.Component{
     render(){
         
         if (this.state.images!=null){
-            let imagesArray = this.state.images.map((image)
-            =>
+            let imagesArray = this.state.images.map((image)=>
             <Carousel.Item>
                 <img className="d-block w-100"
-                src={image}
+                src={image.imagePath} alt="images"
                  />
             </Carousel.Item>     
             );
@@ -35,6 +35,10 @@ export class CustomCarousel extends React.Component{
                  {imagesArray ? imagesArray : null}
              </Carousel>
             );
-        } 
+        }
+        return null; 
     }
+    componentDidMount() {
+        this.getData();
+    } 
 }
