@@ -10,6 +10,8 @@ export class CustomNavbar extends React.Component {
             <Nav className="mr-auto">
                 <Nav.Link href="/" className="nav-link">Home</Nav.Link>
                 <Nav.Link href="/aboutme" className="nav-link">About Me</Nav.Link>
+                <Nav.Link href="/images" className="nav-link">Image Porfolio</Nav.Link>
+                <Nav.Link href="/musicalify" className="nav-link">Musicalify</Nav.Link>
             </Nav>
         </Navbar>);
     }

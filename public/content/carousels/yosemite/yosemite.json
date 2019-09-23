@@ -1,26 +1,26 @@
 [
     {
-        "imagePath": "content/carousel/yosemite/image1.jpg"
+        "imagePath": "content/carousels/yosemite/image1.jpg"
     },
     {
-        "imagePath": "content/carousel/yosemite/image2.jpg"
+        "imagePath": "content/carousels/yosemite/image2.jpg"
     },
     {
-        "imagePath": "content/carousel/yosemite/image3.jpg"
+        "imagePath": "content/carousels/yosemite/image3.jpg"
     },
     {
-        "imagePath": "content/carousel/yosemite/image4.jpg"
+        "imagePath": "content/carousels/yosemite/image4.jpg"
     },
     {
-        "imagePath": "content/carousel/yosemite/image5.jpg",
+        "imagePath": "content/carousels/yosemite/image5.jpg"
     },
     {
-        "imagePath": "content/carousel/yosemite/image6.jpg"
+        "imagePath": "content/carousels/yosemite/image6.jpg"
     },
     {
-        "imagePath": "content/carousel/yosemite/image7.jpg"
+        "imagePath": "content/carousels/yosemite/image7.jpg"
     },
     {
-        "imagePath": "content/carousel/yosemite/image8.jpg",
+        "imagePath": "content/carousels/yosemite/image8.jpg"
     }
 ]

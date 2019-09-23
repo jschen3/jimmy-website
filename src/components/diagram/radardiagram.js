@@ -23,20 +23,19 @@ export class RadarDiagram extends React.Component{
         }]
         const captions = {
             // columns
-            battery: 'Battery Capacity',
-            design: 'Design',
-            useful: 'Usefulness',
-            speed: 'Speed',
-            weight: 'Weight'
+            battery: 'Artistic Expression',
+            design: 'Rhythm',
+            useful: 'Intonation',
+            speed: 'Tempo',
+            weight: 'Bowing'
           };
           return (<RadarChart
             captions={captions}
             data={data}
             size={450}
-            scales={3}
-            axes={true}
-            scaleProps={{ className: 'scale', fill: 'black', stroke:"#999",
-            strokeWidth:"0.2" }}
+            scales={5}
+            axes={false}
+            scaleProps={{className: 'scale', fill: 'black'}}
             />);
     }        
     
