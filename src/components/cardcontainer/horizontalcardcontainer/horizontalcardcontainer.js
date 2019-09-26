@@ -2,11 +2,11 @@ import Card from 'react-bootstrap/Card'
 import './horizontalcardcontainer.css';
 import React from 'react';
 import Button from 'react-bootstrap/Button'
-export class HomepageHorizontalCardContainer extends React.Component {
+export class HorizontalCardContainer extends React.Component {
     constructor(props){
         super(props);
         this.state= {
-            currentMonthCards: null,
+            cards: null,
         }
     }
     getData(){
@@ -14,23 +14,23 @@ export class HomepageHorizontalCardContainer extends React.Component {
         relativePath=relativePath.slice(1, relativePath.length);
         console.log(relativePath);
         const cardPath='content/horizontalcards/'+relativePath+'/'+relativePath+".json";
+        console.log(cardPath);
         fetch(cardPath).then(response => { //move to a different time before render step
             return response.json()
         }).then(
-            (currentMonthCards) => {
-                this.setState({ currentMonthCards });
-                console.log(this.state.currentMonthCards);
+            (cards) => {
+                this.setState({ cards });
+                console.log(this.state.cards);
             });
     }
     render(){
-        if (this.state.currentMonthCards!=null){
-            let cardsArray = this.state.currentMonthCards.map((cardData) => 
+        if (this.state.cards!=null){
+            let cardsArray = this.state.cards.map((cardData) => 
             <Card>
                     <Card.Img className="col-md-4 col-lg-4 card-image" variant="left" src={cardData.image} />                    
                     <Card.Body className="col-md-8 col-lg-8 card-body">
                         <Card.Title className="card-title">
                             <h2>{cardData.title}</h2>
-                            <h4>Article type: {cardData.type}</h4>
                             {cardData.description}
                         <Button className="vertical-card-buttons" variant="primary" onClick={() => this.handleClick(cardData.linkUrl)}>{cardData.linkText}</Button>
                         </Card.Title>     

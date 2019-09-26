@@ -4,7 +4,7 @@ export class ImagePortfolio extends React.Component{
         return(
             <div className="container">
                 <div id="navbar"></div>
-                <div id="links"></div>
+                <div id="horizontalCardContainer"></div>
             </div>    
         );
     }

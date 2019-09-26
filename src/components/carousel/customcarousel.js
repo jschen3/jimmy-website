@@ -28,7 +28,7 @@ export class CustomCarousel extends React.Component {
         if (this.state.images != null) {
             let imagesArray = this.state.images.map((image) =>
                 <Carousel.Item>
-                    <img className="d-block w-100"
+                    <img className="d-block w-100 carousel-image"
                         src={image.imagePath} alt="images"
                     />
                 </Carousel.Item>

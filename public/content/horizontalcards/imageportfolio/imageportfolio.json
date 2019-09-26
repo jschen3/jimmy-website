@@ -1,0 +1,14 @@
+[{
+    "title":"Yosemite",
+    "image":"content/horizontalcards/imageportfolio/images/yosemite.jpg",
+    "description":"A collection of images from my last trip to yosemite, August 3rd 2019.",
+    "linkText":"View Images",
+    "linkUrl":"/yosemite"
+},
+{
+    "title":"Aspen",
+    "image":"content/horizontalcards/imageportfolio/images/aspen.jpg",
+    "description":"A collection of images from my last trip to aspen, September 24th 2019",
+    "linkText":"View Images",
+    "linkUrl":"/aspen"
+}]

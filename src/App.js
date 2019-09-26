@@ -11,8 +11,9 @@ export default function App(){
       <Route exact path="/" component={HomePage} />
       <Route exact path="/aboutme" component={AboutMePage}/>
       <Route exact path="/musicalify" component={Musicalify}/>
-      <Route exact path="/images" component={ImagePortfolio}/>
+      <Route exact path="/imageportfolio" component={ImagePortfolio}/>
       <Route exact path="/yosemite" component={Portfolio}/>
+      <Route exact path="/aspen" component={Portfolio}/>
     </Switch>
   )
 }

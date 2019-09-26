@@ -12,7 +12,9 @@ import {HomepageHorizontalCardContainer } from './components/cardcontainer/horiz
 import {CustomCarousel} from './components/carousel/customcarousel'
 import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+import {HorizontalCardContainer} from './components/cardcontainer/horizontalcardcontainer/horizontalcardcontainer'
 import App from './App';
+
 
 render(
     <BrowserRouter>
@@ -42,4 +44,8 @@ if (document.getElementById('customCarousel')){
 }
 if (document.getElementById('radarDiagram')){
     ReactDOM.render(<RadarDiagram/>, document.getElementById('radarDiagram'));
+}
+
+if (document.getElementById('horizontalCardContainer')){
+    ReactDOM.render(<HorizontalCardContainer/>, document.getElementById('horizontalCardContainer'));
 }
