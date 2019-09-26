@@ -7,10 +7,9 @@ import { HorizontalContainer } from './components/cardcontainer/horizontal/horiz
 import { RadarDiagram }  from './components/diagram/radardiagram';
 // import  {HorizontalCardContainer} from './components/cardcontainer/horizontalcardcontainer/horizontalcardcontainer';
 import { CustomNavbar } from './components/customnavbar/customnavbar';
-import { MediumHorizontalCardContainer } from './components/cardcontainer/horizontalmedium/mediumhorizontalcardcontainer'
+import {HomepageHorizontalCardContainer } from './components/cardcontainer/horizontalcardcontainer/homepagehorizontalcardcontainer'
 // import {ResumePdf} from './components/pdfviewer/ResumePdf'
 import {CustomCarousel} from './components/carousel/customcarousel'
-import {CustomLinks} from './components/cardcontainer/horizontal/CustomLinks.js'
 import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
@@ -26,8 +25,8 @@ render(
 if (document.getElementById('navbar')){
     ReactDOM.render(<CustomNavbar />, document.getElementById('navbar'));
 }    
-if (document.getElementById('mediumHorizontalCardContainer')) {
-    ReactDOM.render(<MediumHorizontalCardContainer />, document.getElementById('mediumHorizontalCardContainer'));
+if (document.getElementById('homepageHorizontalCardContainer')) {
+    ReactDOM.render(<HomepageHorizontalCardContainer />, document.getElementById('homepageHorizontalCardContainer'));
 }
 
 if (document.getElementById('aboutMeImages')) {
@@ -43,7 +42,4 @@ if (document.getElementById('customCarousel')){
 }
 if (document.getElementById('radarDiagram')){
     ReactDOM.render(<RadarDiagram/>, document.getElementById('radarDiagram'));
-}
-if (document.getElementById('links')){
-    ReactDOM.render(<CustomLinks/>, document.getElementById('links'));
 }

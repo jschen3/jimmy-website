@@ -1,14 +1,6 @@
-.card-image{
-    max-height:300px
-}
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+.vertical-card-buttons{
+    display:block;
+    position:relative;
+    margin-top:20px;
+    margin-bottom:20px;
 }

@@ -2,7 +2,7 @@
     {
         "title": "RESUME",
         "type": "PDF",
-        "image": "content/horizontal_cards/homepage_horizontal_cards/images/grand-canyon.jpg",
+        "image": "content/horizontalcards/homepagehorizontalcards/images/grand-canyon.jpg",
         "description": "Here is a copy of my resume and a brief overview of my work as a software engineer. I have substantial front-end and back-end experience. Please click to see the whole resume. ",
         "linkText": "Download resume",
         "linkUrl": "content/pdfs/Resume.pdf"
@@ -10,7 +10,7 @@
     {
         "title": "Cost Orchestration at Walmart",
         "type": "Medium Article",
-        "image": "content/vertical_cards/2019/september/images/cost_orchestration.png",
+        "image": "content/horizontalcards/2019/september/images/cost_orchestration.png",
         "description": "A critical component at Walmart or any ecommerce store is data. One particular aspect of that data is the data related to the items that…",
         "linkText": "Read more",
         "linkUrl": "https://medium.com/walmartlabs/cost-orchestration-at-walmart-f34918af67c4"
@@ -18,7 +18,7 @@
     {
         "title": "Education Systems",
         "type": "Medium Article",
-        "image": "content/vertical_cards/2019/september/images/education.png",
+        "image": "content/horizontalcards/2019/september/images/education.png",
         "description": "One topic, that has always fascinated me is education; teaching, what is the best way to shape the next generation for success. Are there…",
         "linkText": "Read more",
         "linkUrl": "https://medium.com/@chen.s.jimmy/education-systems-around-the-world-dea13b3faab"
@@ -26,7 +26,7 @@
     {
         "title": "Break up Facebook?",
         "type": "Medium Article",
-        "image": "content/vertical_cards/2019/september/images/facebook.jpg",
+        "image": "content/horizontalcards/2019/september/images/facebook.jpg",
         "description": "Winston Churchill has two quotes that are a great way to look at this controversial question. Namely, “The best argument against Democracy…",
         "linkText": "Read more",
         "linkUrl": "https://medium.com/@chen.s.jimmy/why-we-shouldnt-break-up-facebook-c385195085e9"

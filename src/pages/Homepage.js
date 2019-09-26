@@ -5,8 +5,7 @@ export class HomePage extends React.Component{
         return (
             <div className="container">
                 <div id="navbar"></div>
-                <div id="mediumHorizontalCardContainer"></div>
-                
+                <div id="homepageHorizontalCardContainer"></div>
             </div>
         );
     }    

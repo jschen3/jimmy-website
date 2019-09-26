@@ -8,7 +8,7 @@ export class HorizontalContainer extends React.Component {
         }
     }
     getData() {
-        const aboutMeTextJson = 'content/horizontal_cards/aboutme/aboutme.json'
+        const aboutMeTextJson = 'content/horizontalcards/aboutme/aboutme.json'
         fetch(aboutMeTextJson).then(response => { //move to a different time before render step
             return response.json()
         }).then(

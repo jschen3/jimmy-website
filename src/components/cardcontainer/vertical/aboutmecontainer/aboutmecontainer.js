@@ -9,7 +9,7 @@ export class AboutMeContainer extends React.Component {
         }
     }
     getData() {
-        const aboutMeImagesJson = 'content/vertical_cards/aboutme/aboutme.json'
+        const aboutMeImagesJson = 'content/verticalcards/aboutme/aboutme.json'
         fetch(aboutMeImagesJson).then(response => { //move to a different time before render step
             return response.json()
         }).then(

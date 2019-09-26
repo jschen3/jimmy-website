@@ -17,7 +17,7 @@ export class VerticalCardContainer extends React.Component {
         const today = new Date();
         const todayMonth = months[today.getMonth()];
         const todayYear = today.getFullYear();
-        const todayMonthCardPath = 'content/vertical_cards/' + todayYear + '/' + todayMonth + '/' + todayMonth + '.json';
+        const todayMonthCardPath = 'content/horizontalcards/' + todayYear + '/' + todayMonth + '/' + todayMonth + '.json';
         fetch(todayMonthCardPath).then(response => { //move to a different time before render step
             return response.json()
         }).then(

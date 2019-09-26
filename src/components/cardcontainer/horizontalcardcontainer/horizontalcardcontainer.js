@@ -1,31 +1,39 @@
 import Card from 'react-bootstrap/Card'
 import './horizontalcardcontainer.css';
 import React from 'react';
-export class HorizontalCardContainer extends React.Component {
+import Button from 'react-bootstrap/Button'
+export class HomepageHorizontalCardContainer extends React.Component {
     constructor(props){
         super(props);
         this.state= {
-            cards:null
+            currentMonthCards: null,
         }
     }
     getData(){
-        const horizontalCardsJson = 'content/horizontal_cards/homepage_horizontal_cards/homepage_horizontal_cards.json'
-        fetch(horizontalCardsJson).then(response => { //move to a different time before render step
+        var relativePath=window.location.href.replace(/(.+\w\/)(.+)/,"/$2");
+        relativePath=relativePath.slice(1, relativePath.length);
+        console.log(relativePath);
+        const cardPath='content/horizontalcards/'+relativePath+'/'+relativePath+".json";
+        fetch(cardPath).then(response => { //move to a different time before render step
             return response.json()
         }).then(
-            (cards) => {
-                this.setState({ cards });
-                console.log(this.state.cards);
+            (currentMonthCards) => {
+                this.setState({ currentMonthCards });
+                console.log(this.state.currentMonthCards);
             });
     }
     render(){
-        if (this.state.cards!=null){
-            let cardsArray = this.state.cards.map((cardData) => 
+        if (this.state.currentMonthCards!=null){
+            let cardsArray = this.state.currentMonthCards.map((cardData) => 
             <Card>
-                    <Card.Img className="col-md-4 col-lg-4 card-image" variant="left" src={cardData.image} />   
+                    <Card.Img className="col-md-4 col-lg-4 card-image" variant="left" src={cardData.image} />                    
                     <Card.Body className="col-md-8 col-lg-8 card-body">
-                        <Card.Title className="card-title"><h2>{cardData.title}</h2>{cardData.description}
-                        </Card.Title>
+                        <Card.Title className="card-title">
+                            <h2>{cardData.title}</h2>
+                            <h4>Article type: {cardData.type}</h4>
+                            {cardData.description}
+                        <Button className="vertical-card-buttons" variant="primary" onClick={() => this.handleClick(cardData.linkUrl)}>{cardData.linkText}</Button>
+                        </Card.Title>     
                     </Card.Body>
             </Card>);
             return (
@@ -39,5 +47,7 @@ export class HorizontalCardContainer extends React.Component {
     componentDidMount() {
         this.getData();
     }
-    
+    handleClick(linkUrl) {
+        window.location.href = linkUrl;
+    }
 }
