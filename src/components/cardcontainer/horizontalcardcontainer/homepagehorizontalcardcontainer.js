@@ -10,18 +10,15 @@ export class HomepageHorizontalCardContainer extends React.Component {
         }
     }
     getData(){
-        const months = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
-        const today = new Date();
-        const todayMonth = months[today.getMonth()];
-        const todayYear = today.getFullYear();
-        const todayMonthCardPath = 'content/horizontalcards/' + todayYear + '/' + todayMonth + '/' + todayMonth + '.json';
-        fetch(todayMonthCardPath).then(response => { //move to a different time before render step
-            return response.json()
-        }).then(
-            (currentMonthCards) => {
-                this.setState({ currentMonthCards });
-                console.log(this.state.currentMonthCards);
-            });
+        const todayMonthCardPath = 'content/horizontalcards/homepagehorizontalcards/homepagecards.json'
+            fetch(todayMonthCardPath).then(response => { //move to a different time before render step
+                return response.json()
+            }).then(
+                (currentMonthCards) => {
+                    this.setState({ currentMonthCards });
+                    console.log(this.state.currentMonthCards);
+                });
+                
     }
     render(){
         if (this.state.currentMonthCards!=null){
