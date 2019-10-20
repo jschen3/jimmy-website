@@ -9,6 +9,15 @@
         "linkUrl": "content/pdfs/Resume.pdf"
     },
     {
+        "title":"How I made this website?",
+        "type":"Medium Article",
+        "date":"October 19, 2019",
+        "image": "content/horizontalcards/homepagehorizontalcards/images/react.png",
+        "description":"How was this website created? I built this website using 2 technologies react and json. Json allows this page to be future proof. Each page is dynamically generated from the json template provided. To get a further look click the link.",
+        "linkText": "Read more",
+        "linkUrl": "https://medium.com/@chen.s.jimmy/how-to-make-a-website-using-bootstrap-and-react-466d52765db2"
+    },
+    {
         "title": "Cost Orchestration at Walmart",
         "type": "Medium Article",
         "date":"June 7, 2019",
